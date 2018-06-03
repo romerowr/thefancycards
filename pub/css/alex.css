@@ -1,0 +1,91 @@
+
+.breadcrumb {
+    color: black;
+    padding-bottom: 2%;
+}
+
+.breadcrumb ul {
+    display: inline-flex;
+}
+
+.breadcrumb a {
+    color: black;
+}
+
+.breadcrumb a:hover {
+    color: red;
+}
+
+.mostrar-general {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.producto img {
+    max-height: 300px;
+}
+
+.mostrar-producto {
+    flex: 1 2 33%;
+
+    background: lightgreen;
+
+    width: 30%;
+    min-width: 210px;
+    max-width: 280px;
+    margin: 10px;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mostrar-imagen {
+    flex: 1 1 100%;
+    overflow: hidden;
+
+    background: orange;
+
+}
+
+.mostrar-imagen button {
+    position: relative;
+    margin-left: 90%;
+}
+
+.mostrar-detalles {
+    flex: 1 1 100%;
+
+    background: yellow;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mostrar-nombre {
+    flex: 1 1 50%;
+
+    background: green;
+
+}
+
+.mostrar-compra {
+    flex: 1 1 50%;
+
+    background: red;
+
+}
+
+.mostrar-precio {
+    flex: 1 1 100%;
+
+    background: red;
+
+}
+
+.mostrar-anadir {
+    flex: 1 1 100%;
+
+    background: blue;
+
+}

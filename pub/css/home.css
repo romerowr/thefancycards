@@ -1,0 +1,94 @@
+#slider {
+    position: relative;
+    overflow: hidden;
+    margin: 0px auto 0 auto;
+    border-radius: 4px;
+}
+
+#slider ul {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+#slider ul li {
+    position: relative;
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+
+    background: #ccc;
+    text-align: center;
+    line-height: 300px;
+}
+
+a.control_prev, a.control_next {
+    position: absolute;
+    top: 40%;
+    z-index: 1;
+    display: block;
+    padding: 20px 10px;
+
+    background: #2a2a2a;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+a.control_prev:hover, a.control_next:hover {
+    opacity: 1;
+    -webkit-transition: all 0.2s ease;
+}
+
+a.control_prev {
+    border-radius: 0 2px 2px 0;
+}
+
+a.control_next {
+    right: 0;
+    border-radius: 2px 0 0 2px;
+}
+
+.slider_option {
+    position: relative;
+    margin: 10px auto;
+    width: 160px;
+    font-size: 18px;
+}
+
+#textos {
+
+    display: flex;
+    flex-direction: row;
+}
+
+#textos section img {
+    width: 20%;
+    max-height: 70%;
+    cursor: pointer;
+}
+
+#textos section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    width: 33.33333%;
+}
+
+#textos section p {
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 40px;
+    padding-bottom: 70px;
+    font-size: 15px;
+    text-align: justify;
+}

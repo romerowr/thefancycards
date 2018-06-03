@@ -1,0 +1,156 @@
+#carritoDespegable {
+    position: fixed;
+    border-radius: 10px;
+    /*top: 0;*/
+    height: 70%;
+    width: 260px;
+    margin-top: 100px;
+    /*padding-top: 90px;*/
+    padding: 0 15px;
+    overflow-y: auto;
+    box-shadow: 0 0 20px rgba(60, 179, 113, 0.9);
+    z-index: 900;
+    right: -100%;
+    background: #FFF;
+    -webkit-transition: right 0.3s;
+    -moz-transition: right 0.3s;
+    transition: right 0.3s;
+}
+
+#carritoDespegable.speed-in {
+    right: 10px;
+}
+
+#carritoDespegable > * {
+    padding: 0 1em;
+}
+
+#carritoDespegable h2 {
+    background: rgb(86, 255, 114);
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+#carritoDespegable .productosCarrito {
+    padding: 0;
+}
+
+#carritoDespegable .productosCarrito li {
+    position: relative;
+    padding: 1em;
+    border-bottom: 1px solid #f0c419;
+}
+
+#carritoDespegable .precioProducto {
+    margin-top: .4em;
+}
+
+#carritoDespegable .cambiarEmailEnvio {
+    margin: 5px -1px;
+    color: white;
+    background: #8697cb;
+    border: none;
+    padding: 2px 10px;
+    border-radius: 10px 2px 10px 2px;
+}
+
+#carritoDespegable .cambiarEmailEnvio:hover {
+    background: #1e3b93;
+}
+
+#carritoDespegable .borrarProductoCarrito {
+    position: absolute;
+    right: 1em;
+    top: 12%;
+    color: white;
+    padding: 5px;
+    border-radius: 100%;
+    border: none;
+    background: red;
+}
+
+#carritoDespegable .borrarProductoCarrito:hover {
+    box-shadow: 0 0 5px red;
+}
+
+#carritoDespegable .totalCarrito {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#carritoDespegable .totalCarrito span {
+    float: right;
+}
+
+#carritoDespegable .totalCarrito::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+#carritoDespegable .pagarCarrito {
+    display: block;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background: #3CB371;
+    color: #FFF;
+    text-align: center;
+}
+
+#carritoDespegable .pagarCarrito:hover {
+    background: #00f236;
+}
+
+#carritoDespegable .eliminarCompra {
+    margin: 10px 0;
+    color: white;
+    background: #ff251d;
+    border: none;
+    padding: 2px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#carritoDespegable .eliminarCompra:hover {
+    background: #710400;
+}
+
+#carritoDespegable .eliminarCompra a {
+    text-decoration: underline;
+    color: red;
+}
+
+#sombra {
+    position: fixed;
+    min-height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(52, 54, 66, 0.9);
+    cursor: pointer;
+    z-index: 1;
+    display: none;
+}
+
+#sombra.is-visible {
+    display: block;
+    -webkit-animation: fadeIn 0.3s;
+    -moz-animation: fadeIn 0.3s;
+    animation: fadeIn 0.3s;
+}
+
+/*keyframes*/
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

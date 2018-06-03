@@ -1,0 +1,41 @@
+@keyframes caer {
+    0% {
+        transform: rotateZ(0deg);
+        color: black;
+    }
+
+    30% {
+        transform: rotateZ(90deg);
+        transform-origin: 0% 100%;
+    }
+
+    60% {
+        transform: translateY(100vh);
+    }
+
+    61% {
+        color: black;
+    }
+
+    100% {
+        transform: translateY(0px);
+        transform: rotateZ(0deg);
+        color: red;
+    }
+}
+
+.caer {
+    position: absolute;
+    animation-duration: 10s;
+    animation-name: caer;
+    animation-fill-mode: forwards;
+}
+
+.contenedor-error {
+    padding: 200px 0;
+    text-align: center;
+}
+
+.contenedor-error p {
+    margin-bottom: 20px;
+}

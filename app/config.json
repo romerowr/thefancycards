@@ -1,0 +1,25 @@
+{
+	"app":{
+		"title":"TheFancyCards",
+		"version":"1.7"
+	},
+	"dbconf_dev":{
+		"driver":"mysql",
+		"dbhost":"localhost",
+		"dbuser":"root",
+		"dbpass":"",
+		"dbname":"thefancycards"
+    },
+  "dbconf_pro":{
+		"driver":"mysql",
+		"dbhost":"localhost",
+		"dbuser":"",
+		"dbpass":"al4mn3s",
+		"dbname":"thefancycards"
+	},
+  "assets":{
+    "css":"bootstrap.min.css",
+    "js":"app.js"
+  }
+
+}
